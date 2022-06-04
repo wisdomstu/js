@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 5 operator</title>
+</head>
+
+<body>
+    <h1 id="lblResult"> نتیجه </h1>
+    <br>
+    Number 1: <input type="number" id="num1" />
+    <br>
+    number 2: <input type="number" id="num2" />
+    <br>
+    <input type="button" value="برو بریم" onclick="sum()">
+
+
+
+</body>
+
+<script>
+    var lbl = document.getElementById('lblResult');
+
+ 
+    function sum() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        num1 = parseFloat(num1);
+        num2 = parseInt(num2);
+   
+// جاوااسکریپت به کوچک و بزرگی حروف حساس است و اگر تفاوت کند دو کلمه می شناسد
+        var sum = num1 + num2;
+
+
+        lbl.innerHTML = sum;
+    }
+
+</script>
+
+</html>

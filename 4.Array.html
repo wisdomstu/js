@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 5 Array</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var Names = ["a", "b", "c", "f", "g"]
+
+    document.write(Names.length);
+    document.write("<br/>");
+    document.write(Names[4]);
+    document.write("<br/>");
+    // اگر بخواهم یک عضو از لیست را تغییر دهم لازم نیست که در خود لیست 
+    // تغییر ایجاد کنم بلکه می توانم تغییر را ضمیمه آن کنم.
+
+    Names[2] = "z";
+    document.write(Names[2]);
+
+// از آرایه ها می توانیم برای تکمیل اطلاعات یک فرم استفاده کرد مانند نمونه زیر
+    document.write("<br/>");
+    var person = ["ahmad sadeqi", "32"]
+document.write("My name is "+person[0]+"   My age is"+person[1])
+document.write("<br/>");
+
+// بر اساس دستور سورت می توان آرایه ها را منظم کرد مثلا
+
+var Names1 = ["z1","z2","z20", "b", "c", "d", "e"]
+var Names2 = Names1.sort()
+document.write(Names2)
+</script>
+
+
+</html>

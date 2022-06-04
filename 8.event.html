@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> lesson 8
+        آشنایی با رویدادها</title>
+</head>
+<body>
+    <h1 id="lbl">  result    </h1>
+
+    <br>
+    <!-- ما می توانیم به جای رفتن به قسمت اسکریپت در داخل خود بادی هم دستور را اجرا کنیم اما 
+    برای نظم دهی و زیبایی جالب نیست
+    کد زیر شیوه نوشت همین رویداد است بدون رفتن به قسمت اسکریپت -->
+    <!-- برای اینکه تاریخ در خود همان باکس نمایش داده شود از ذیس استفاده می کنیم -->
+    <button onclick= "this.innerHTML=Date()">  تاریخ امروز </button>
+    
+    <br>
+    <button onclick= "showDate()"> تاریخ امروز یک</button>
+</body>
+
+<script>
+ function showDate()
+{
+    document.getElementById ('lbl').innerHTML=Date()
+}
+</script>
+</html>
