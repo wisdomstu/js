@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> lesson 11 conditions</title>
+</head>
+<body>
+    <p id="result"> </p>
+</body>
+
+<script>
+// به دو صورت می توان یک حلقه ساخت حالت اول این است که سه جز آن را مشخص 
+// می کنیم جز اول شماره آغاز چرخه، جز دوم اندازه و دامنه حلقه و 
+// جز سوم منطق پیش روی چرخه
+
+var names=["زهرا","حلما","فاطمه","احمد"];
+var element = document.getElementById("result");
+var text = "";
+ for (var i=0 ; i<names.length ; i++){
+    text += names[i] + "<br/>";
+
+}
+element.innerHTML= text;
+
+// نوع دوم نوشت حلقه ها که راحتر به زبان عرفی هم هست این مدل است
+for(n in names)
+{
+    alert(names[n])
+}
+
+</script>
+</html>

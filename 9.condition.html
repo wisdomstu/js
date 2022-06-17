@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions 9 lesson</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // برای اینکه جواب شرط درست باشد باید تمام شرط ارضا شود که دو شرطی یا چند شرطی 
+    // را با && نشان می دهیم 
+    var x = 5;
+    if (x<12 && x>4 && x==7 )
+        {
+            alert("true")
+        }else
+        {
+            alert("false")
+        }
+//  ممکن است که شرطی ما منفصله باشد که با || نشان می دهیم مانند:
+        var x = 5;
+    if (x<12 && x>4 || x==7 )
+        {
+            alert("true")
+        }else
+        {
+            alert("false")
+        }
+
+        //  گاهی ممکن است که شرطی ما مانعه الجمع باشد و چندین حالت برای آن متصور شویم 
+        // که در این صورت از الس ایف استفاده می کنیم مانند:
+        var time=18;
+        if(time <= 11 ) {
+            alert("صبح بخیر")
+        } else if(time<17)
+        {
+            alert("ظهر بخیر")
+        }else if (time<20)
+        {
+            alert("عصر بخیر")
+        }
+
+        else{
+            alert("شب بخیر")
+        }
+
+
+</script>
+</html>
