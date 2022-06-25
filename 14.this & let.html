@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 14 his & let</title>
+</head>
+<body>
+
+    
+    <p id="demo"></p>
+<!-- زیس برای اشاره به مالک یا محیطی که در آن قرار داریم به کار می رود  -->
+
+<button onclick="this.style.display='none'"> آگه منو پیدا کردی </button>
+
+</body>
+
+
+<script>
+    // با دستور لت ما تعیین می کنیم که این متغیر تنها در این محدود یا بلوک اجرا شود و فرا خوانده شود
+    // این تفاوت ور با لت هست 
+    lastName ="ahmad"
+    {
+        let lastName= "fateme"
+
+    }
+    document.getElementById('demo').innerHTML = lastName;
+</script>
+</html>

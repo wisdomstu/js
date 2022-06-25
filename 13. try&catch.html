@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 13 try and catch</title>
+</head>
+<body>
+
+
+
+    <p id="result"> </p>
+</body>
+
+
+<script>
+    // وقتی که به اجرای کدمان شک داریم می توانینم از طریق زیر یک بدیل برای آن بسازیم
+    // یعنی اگر کدمان اجرا نشد بدیل آن اجرا شود
+    // مثلا اکر فانکشن زیر تعریف نشده باشد حالت کش اجرا می شود
+
+function addahmadsadeqi(name)
+{
+
+}
+
+try
+{
+addahmadsadeqi("ahmad sadeqi");
+}
+catch(err)
+{
+document.getElementById("result").innerHTML = err.message;
+}
+// با دستور فاینلی می گوییم که هر کدام از دو کد بالا اجرا شد در هر صورت فاینلی را اجرا کن
+finally
+{
+    alert("ابتدا در سایت ثبت نام کنید");
+}
+</script>
+</html>
